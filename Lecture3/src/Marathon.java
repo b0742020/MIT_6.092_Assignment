@@ -1,6 +1,6 @@
 public class Marathon {
 
-    public static void sortTimes(int[] times, String[] names) {
+    public static void sort(int[] times, String[] names) {
         for (int i = 0; i < times.length; i++) {
             for (int j = i + 1; j < times.length; j++) {
                 if (times[i] > times[j]) {
@@ -45,7 +45,7 @@ public class Marathon {
 
         newLine();
 
-        sortTimes(times, names);
+        sort(times, names);
 
         printFastest(times, names);
     }
